@@ -2,7 +2,6 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
 \usepackage{eurosym}
 \usepackage{lastpage}
 \usepackage{xspace}
@@ -16,6 +15,7 @@
 \usepackage{csquotes}
 \usepackage{pgfgantt}
 \usepackage[nohyperlinks,nolist]{acronym}
+\usepackage{longtable}
 
 \usepackage[compact]{titlesec}
 % HotFix from http://tex.stackexchange.com/a/300259/84485
@@ -27,16 +27,17 @@
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 \makeatother
 
+
 \usepackage{enumitem}
 \usepackage[style=verbose-ibid,backend=biber]{biblatex}
 \usepackage{hyperref}
-\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{amsfonts, amsmath}
+%\usepackage{amssymb}
 \usepackage{soul} % for smarter (word-wrapping) underlining.
 \usepackage{lineno}
 \usepackage{enumitem} % for broken enumerate in ethics section.
 
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathptmx}
 
 \newcommand{\TODO}[1]{{\textcolor{red}{[\textbf{TODO:} #1]}}}
 % \titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
