@@ -1,4 +1,4 @@
-proposal=IF-2017-Part_B
+proposal=IF-Part_B
 
 all:
 	make proposal
@@ -10,10 +10,10 @@ proposal:
 	pdflatex ${proposal}
 
 doc1: proposal
-	pdflatex -jobname=document1 "\includeonly{doc1}\input{IF-2017-Part_B}"
+	pdflatex -jobname=document1 "\includeonly{doc1}\input{IF-Part_B}"
 
 doc2: proposal
-	pdflatex -jobname=document2 "\includeonly{doc2}\input{IF-2017-Part_B}"
+	pdflatex -jobname=document2 "\includeonly{doc2}\input{IF-Part_B}"
 
 clean:
 	rm -f *~ *.aux *.idx *.log *.bbl *.lol *.lof *.lot *.blg *-blx.bib *.out *.backup *.brf *.toc  *.bcf *.run.xml
